@@ -30,7 +30,7 @@ public class QueueService {
     }
 
     public Queue getQueueStatus(String queueNumber) {
-        return queueRepository.findByQueueNumber(queueNumber).orElse(null); // Return the Queue entity directly
+        return queueRepository.findByQueueNumber(queueNumber).orElse(null);
     }
 
     public Queue operateService() {
